@@ -35,13 +35,12 @@ a:hover {
 img {
     border: solid black 1px;
     border-radius: 5px;
-    margin: 1em auto;
     display: block;
+    max-height: 250px;
 }
 
 .container {
     max-width: 700px;
-    width: 700px;
     margin: auto;
     padding-bottom: 2em;
 }
@@ -49,4 +48,28 @@ img {
 .center-text {
     text-align: center;
     display: block;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.child-1 {
+    flex: 0 1 0;
+}
+
+.child-2 {
+    flex: 2 1 0;
+    min-width: 200px;
 }
